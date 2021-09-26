@@ -1,17 +1,18 @@
-# Main routine goes here
-
-
 
 end_game = ""
+
+# Main routine goes here
 while end_game != "xxx":
     math_skills = int(input("How confident are you in maths on a scale of 1 to 10?"))
-# If math skills 10
-
+    # If math skills is 1, 2 or 3, display easy questions
     if math_skills <= 3:
-        print("bad at maths")
-    elif math_skills > 4 < 6:
+        print("not good at maths")
+    # if math skills is 4 5 or 6, display medium questions
+    elif math_skills >= 4 <= 6:
         print("decent at maths")
-    elif math_skills >= 7:
-        print("good at maths")
+    # if math skills is 8 9 or 10, display hard questions
+    elif math_skills >= 7 < 11:
+        print("great at maths")
     else:
+        print("[ERROR] Please put a whole number")
         end_game = "xxx"
