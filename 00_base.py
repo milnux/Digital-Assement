@@ -22,6 +22,8 @@ def difficulty():
     else:
         print("[ERROR] Please put a whole number")
 
+    return ""
+
 
 def statement_generator(statement, decoration):
     sides = decoration * 3
@@ -34,3 +36,6 @@ def statement_generator(statement, decoration):
     print(top_bottom)
 
     return ""
+
+
+# Main routine goes here...
