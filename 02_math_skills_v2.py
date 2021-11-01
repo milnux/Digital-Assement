@@ -11,23 +11,24 @@ def conf_chkr(question, low, high):
             if low < confidence <= high:
                 return confidence
             else:
-                print("[ERROR] Please put a whole number")
+                print(error)
             # if the user types in different data value, display error message
         except ValueError:
             print(error)
 
 
-skill_level = conf_chkr("How confident are you in maths?", 0, 10)
+end_game = ""
+while end_game != "xxx":
+    skill_level = conf_chkr("How confident are you in maths?", 0, 10)
 
-# If math skills is 8 9 or 10 display hard questions
-if skill_level >= 8 <= 10:
-    print("hard questions")
+    # If math skills is 8 9 or 10 display hard questions
+    if skill_level >= 8 <= 10:
+        print("hard questions")
 
-# if math skills is 4 5 6 or 7display medium questions
-elif skill_level >= 4 <= 7:
-    print("medium questions")
+    # if math skills is 4 5 6 or 7 display medium questions
+    elif skill_level >= 4 <= 7:
+        print("medium questions")
 
-# If math skills is 1, 2 or 3, display easy questions
-elif skill_level > 0 <= 3:
-    print("easy questions")
-
+    # If math skills is 1, 2 or 3, display easy questions
+    elif skill_level > 0 <= 3:
+        print("easy questions")
