@@ -1,4 +1,4 @@
-def conf_chkr(question, low, high):
+def difficulty(question, low, high):
     error = "Please enter an whole number between 1 and 10\n"
 
     valid = False
@@ -19,7 +19,7 @@ def conf_chkr(question, low, high):
 
 end_game = ""
 while end_game != "xxx":
-    skill_level = conf_chkr("How confident are you in maths?", 0, 10)
+    skill_level = difficulty("How confident are you in maths?", 0, 10)
 
     # If math skills is 8 9 or 10 display hard questions
     if skill_level >= 8 <= 10:
