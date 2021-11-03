@@ -25,4 +25,6 @@ while end != "xxx":
     number_1 = random.randint(0, 15)
     number_2 = random.randint(0, 15)
     product = number_1 * number_2
+
+    quest_ask()
     int(input(" {} x {} = ".format(number_1, number_2,)))
