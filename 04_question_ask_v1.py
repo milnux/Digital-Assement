@@ -1,4 +1,4 @@
-def ask(question, answer):
+def quest_ask(question, answer):
     error = "Enter a number"
     valid = False
     while not valid:
@@ -13,3 +13,6 @@ def ask(question, answer):
         except ValueError:
             print(error)
 
+# Main routine...
+
+quest_ask("what is 2 x 4", 8)
