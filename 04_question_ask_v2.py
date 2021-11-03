@@ -1,3 +1,6 @@
+import random
+
+
 def quest_ask(question, answer):
     error = "Enter a number"
     valid = False
@@ -13,6 +16,11 @@ def quest_ask(question, answer):
         except ValueError:
             print(error)
 
-# Main routine...
 
+# Main routine...
+# using random.int and format
+# able to randomise the numbers used quiz
+
+for item in range(10)
 quest_ask("what is 2 x 4", 8)
+

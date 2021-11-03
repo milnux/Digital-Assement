@@ -1,10 +1,8 @@
 # Imports go here...
-
+import random
 # Functions go here ...
-
 def instructions():
-    # Display instructions
-    print(statement_generator("How To Play", "*"))
+    print("You will be asked 10 mathematical questions based on the difficulty level you chose")
     return ""
 
 
@@ -15,11 +13,11 @@ def difficulty(question, low, high):
     while not valid:
         try:
             # ask the question
-            confidence = int(input(question))
+            response = int(input(question))
 
             # if the amount is too low/too high, give an error message
-            if low < confidence <= high:
-                return confidence
+            if low < response <= high:
+                return response
             else:
                 print(error)
             # if the user types in different data value, display error message
