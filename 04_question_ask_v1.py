@@ -16,3 +16,4 @@ def quest_ask(question, answer):
 # Main routine...
 
 quest_ask("what is 2 x 4", 8)
+t
