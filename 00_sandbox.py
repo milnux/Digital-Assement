@@ -20,11 +20,9 @@ def quest_ask(question, answer):
 # Main routine...
 # using random.int and format
 # able to randomise the numbers used quiz
-
-for item in range(10):
+end = ""
+while end != "xxx":
     number_1 = random.randint(0, 15)
     number_2 = random.randint(0, 15)
-    answer = number_1 * number_2
-    print(" {} x {} = {}".format(number_1, number_2, answer))
-
-
+    product = number_1 * number_2
+    int(input(" {} x {} = ".format(number_1, number_2,)))
